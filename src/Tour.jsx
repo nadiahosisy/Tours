@@ -5,6 +5,7 @@ const Tour = ({ id, image, info, name, price }) => {
       <span className="tour-price">${price}</span>
       <div className="tour-info">
         <h5>{name}</h5>
+        <p>{info}</p>
       </div>
     </article>
   );
