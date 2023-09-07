@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <main>
-      <Tours tours={tours} />
+      <Tours tours={tours} removeTours={removeTours} />
     </main>
   );
 };
