@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Loading } from "./Loading";
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -21,7 +22,11 @@ const App = () => {
   }, []);
 
   if (isLoading) {
-    return;
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
   }
   return <h2>Tours Starter</h2>;
 };
