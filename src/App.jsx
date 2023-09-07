@@ -45,7 +45,7 @@ const App = () => {
           className="btn"
           onClick={() => fechTours()}
         >
-          refresh
+          Refresh The Page
         </button>
       </main>
     );
