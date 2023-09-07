@@ -1,5 +1,11 @@
-const Tours = () => {
-  return <h2>Tours</h2>;
+const Tours = ({ tours }) => {
+  return (
+    <section>
+      <div className="title">
+        <h2>our tours</h2>
+      </div>
+    </section>
+  );
 };
 
 export default Tours;
