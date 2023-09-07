@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Tour = ({ id, image, info, name, price, removeTour }) => {
+  const [raadMore, setReadMore] = useState(false);
+
   return (
     <article className="single-tour">
       <img src={image} alt={name} className="img" />
