@@ -11,15 +11,18 @@ const App = () => {
     try {
       const response = await fetch(url);
       const tours = await response.json();
-      console.log(tours);
-    } catch (error) {
-      console.log(error);
-    }
+      setTours(tours);
+    } catch (error) {}
+    setIsLoading(false);
   };
 
   useEffect(() => {
     fechTours();
   }, []);
+
+  if (isLoading) {
+    return;
+  }
   return <h2>Tours Starter</h2>;
 };
 export default App;
